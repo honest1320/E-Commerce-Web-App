@@ -1,0 +1,30 @@
+/* align-items is for VERTICAL && justify-content is for HORIZONTAL */
+
+
+/* If u gon use POSITION ABSOLUTE container POSITION must be RELATIVE;
+
+/* DISPLAY: FLEX takes the whole, FLEX: 1 takes portion of row */
+
+/* object-fit: cover.....auto crops our image */
+
+
+
+/* Theres 2 ways of passing properties to an item........
+
+(1) <Image style = {{margin: 10px}} />
+
+(2) const Image = styled.div`
+            margin: props => props.xnxx;
+         `
+                  THEN
+            <Image xnxx = "10px" />  */
+
+
+
+
+
+/* Container must have w100% and h100vh
+
+But when display:flex is involved, vh and vw can be used with 100% interchangably */
+
+

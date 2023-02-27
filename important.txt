@@ -1,0 +1,72 @@
+=>FOR FRONTEND......Product RECEIVESSSSS from ProductS!.....Yaani
+              const Product = ({item}) => { 
+
+
+=> In mongoDB COLLECTIONS means TABLES.....SCHEMA too
+
+
+=> && means THEN
+
+
+=> (req, res) only works for the USER!!!
+
+
+=> process.env.JWT_SEC and process.env.PASS_SEC is just a DISGUISE
+i.e take x disguise it as process.env.abcd
+
+
+=> await keyword ni kama tu EXECUTE
+
+=> $project is used as FIRSTLY EXTRACT....
+
+{
+    "username": "lamaUpdated",
+    "password":"123456"
+}
+{
+    "username": "mia",
+    "password":"666"
+}
+
+
+
+=> useEffect executes after the return function below it is Executed!!
+
+=> useSelector gets data from STORE page
+
+
+STORE stores data that can be used by all pages in our app, 
+ie. stores login info used by Login Page
+and by Cart page.
+
+<Provider> wraps around all pages that wish to use STORE services
+
+
+
+
+
+
+QUESTIONS??
+1) In the verifyToken...why do we use next and next()
+
+2) Query sort in the users page
+
+
+
+
+
+
+
+					2 WAYS TO FETCH DATA
+					--------------------
+useEffect(() => {
+   const getProduct = async ()=>{
+      try {
+         const res = await publicRequest.get("/products/find/" + id)
+         setProduct(res.data)
+      } catch (error) {
+         
+      }
+   }
+    (1) getProduct()	&&  (2) return {x,y} //Maybe Tra, JvM or Mike Dane tutorial
+  }, [id])
